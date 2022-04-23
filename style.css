@@ -1,0 +1,112 @@
+@import "https://fonts.googleapis.com/css?family=Crete Round|Inter";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 12px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3c3a39;
+}
+
+.my-logo {
+  color: #fff;
+  font-family: "Roboto", Verdana, sans-serif;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+header .menu-botton {
+  color: #acb7c3;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.my-name {
+  flex: none;
+  color: #ff6b00;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px;
+}
+
+.iam {
+  position: static;
+  width: 327px;
+  height: 27px;
+  left: 24px;
+  top: 256px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px;
+}
+
+.my-description {
+  flex: none;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  position: static;
+  width: 327px;
+  height: 123px;
+  left: 24px;
+  top: 295px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  order: 2;
+  flex-grow: 0;
+  margin: 12px;
+}
+
+.headline {
+  display: flex;
+  padding: 100px;
+  align-items: center;
+  height: 400px;
+  background-size: 228px 225px;
+  background-repeat: no-repeat;
+  background-position: 65vw 100%;
+  flex-direction: column;
+  background-color: #1c1a19;
+  background-image: url("./images/Illustration.png");
+}
+
+.social-network ul {
+  padding-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-network ul li {
+  list-style: none;
+  width: 40px;
+  height: 25px;
+  overflow: hidden;
+  margin-top: 10px;
+  transition: 0.5s;
+  color: #dbd8d7;
+}
