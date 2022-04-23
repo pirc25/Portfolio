@@ -21,16 +21,11 @@
   background-color: transparent;
   cursor: pointer;
 }
-.headline {
-  background-color: #1c1a19;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+
 .my-name {
   flex: none;
   color: #ff6b00;
-  font-family: "Crete Round";
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -38,10 +33,7 @@
   letter-spacing: 0.37px;
   order: 0;
   flex-grow: 0;
-  margin: 12px 0px;
-  order: 0;
-  flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px;
 }
 
 .iam {
@@ -50,42 +42,34 @@
   height: 27px;
   left: 24px;
   top: 256px;
-
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-
   color: #fff5e1;
-
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px;
 }
 
 .my-description {
   flex: none;
-  font-family: "Poppins";
-  color: #ffffff;
-
+  font-family: "Poppins", sans-serif;
+  color: #fff;
   position: static;
   width: 327px;
   height: 123px;
   left: 24px;
   top: 295px;
-
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
-  flex: none;
   order: 2;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px;
 }
 
 .headline {
@@ -95,6 +79,8 @@
   background-size: 650px 650px;
   background-repeat: no-repeat;
   background-position: 65vw 100%;
+  flex-direction: column;
+  background-color: #1c1a19;
 }
 
 .social-network ul {
