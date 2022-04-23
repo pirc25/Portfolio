@@ -1,12 +1,13 @@
 .toolbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #3c3a39;
 }
 
 .my-logo {
   color: #fff;
-  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   display: flex;
   align-items: center;
@@ -17,4 +18,95 @@
   color: #1a2236;
   background-color: transparent;
   cursor: pointer;
+}
+.headline {
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.my-name {
+  flex: none;
+  color: #ff6b00;
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0px;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0px;
+}
+
+.iam {
+  position: static;
+  width: 327px;
+  height: 27px;
+  left: 24px;
+  top: 256px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #fff5e1;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px 0px;
+}
+
+.my-description {
+  flex: none;
+  font-family: "Poppins";
+  color: #ffffff;
+
+  position: static;
+  width: 327px;
+  height: 123px;
+  left: 24px;
+  top: 295px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 12px 0px;
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 80px);
+  background-size: 650px 650px;
+  background-repeat: no-repeat;
+  background-position: 65vw 100%;
+}
+
+.social-network ul {
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-network ul li {
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  margin-top: 10px;
+  transition: 0.5s;
 }
