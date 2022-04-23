@@ -21,7 +21,7 @@ Download the project, open with VSC or anorther text editor to edit, and open th
 
 Visual code studio, browser.
 
-## Authors
+## Author
 
 👤 **Richard Burneo**
 
