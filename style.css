@@ -1,0 +1,20 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3c3a39;
+}
+
+.my-logo {
+  color: #fff;
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-botton {
+  color: #1a2236;
+  background-color: transparent;
+  cursor: pointer;
+}
