@@ -1,4 +1,8 @@
 @import "https://fonts.googleapis.com/css?family=Crete Round|Inter";
+* {
+  margin: 0;
+  padding: 0;
+}
 
 header {
   padding: 12px;
@@ -78,6 +82,7 @@ header .menu-botton {
 
 .headline {
   display: flex;
+  padding: 100px;
   align-items: center;
   height: 400px;
   background-size: 228px 225px;
@@ -89,7 +94,7 @@ header .menu-botton {
 }
 
 .social-network ul {
-  padding-right: 40px;
+  padding-right: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,7 +102,7 @@ header .menu-botton {
 
 .social-network ul li {
   list-style: none;
-  width: 25px;
+  width: 40px;
   height: 25px;
   overflow: hidden;
   margin-top: 10px;
