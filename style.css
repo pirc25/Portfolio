@@ -7,6 +7,8 @@
 
 header {
   padding: 12px;
+  width: 100%;
+  height: 100%;
 }
 
 .toolbar {
@@ -149,5 +151,37 @@ header .menu-botton {
 
 .button-see-project {
   padding: auto;
+  background-color: #ff6b00;
+}
+
+.container-works {
+  display: flex;
+  flex-direction: column;
+}
+.card-content {
+  padding: 100px 0px 0px 24px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #f8f8f8;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background-image: url("./images/Placeholder.png");
+  background-color: #f58931;
+  background-size: 100% 100%;
+}
+
+.tag {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.see-project-card {
   background-color: #ff6b00;
 }
