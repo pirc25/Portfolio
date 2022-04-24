@@ -113,14 +113,12 @@ header .menu-botton {
   color: #dbd8d7;
 }
 
-/*-----Secction work-----*/
-
 .work-one {
   display: flexbox;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 100px 0px 0px 30px;
+  padding: 100px 0 0 30px;
 }
 
 .title-work-one {
@@ -146,7 +144,7 @@ header .menu-botton {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  padding: 10px 0px 20px;
+  padding: 10px 0 20px;
 }
 
 .button-see-project {
@@ -158,6 +156,7 @@ header .menu-botton {
   display: flex;
   flex-direction: column;
 }
+
 .card-content {
   padding: 100px 0px 0px 24px;
   width: 200px;
