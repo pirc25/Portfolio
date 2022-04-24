@@ -158,7 +158,7 @@ header .menu-botton {
 }
 
 .card-content {
-  padding: 100px 0px 0px 24px;
+  padding: 100px 0 0 24px;
   width: 200px;
   height: 100px;
   display: flex;
