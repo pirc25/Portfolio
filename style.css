@@ -110,3 +110,44 @@ header .menu-botton {
   transition: 0.5s;
   color: #dbd8d7;
 }
+
+/*-----Secction work-----*/
+
+.work-one {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 100px 0px 0px 30px;
+}
+
+.title-work-one {
+  font-size: 40px;
+  font-family: "Crete Round", sans-serif;
+}
+
+.image-recent-work {
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.multi-post {
+  padding: 10px;
+}
+
+.text-work-one {
+  padding: 10px;
+}
+
+.tag-recent-work {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0px 20px;
+}
+
+.button-see-project {
+  padding: auto;
+  background-color: #ff6b00;
+}
