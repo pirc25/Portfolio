@@ -5,35 +5,74 @@
   padding: 0;
 }
 
-header {
-  padding: 12px;
-  width: 100%;
-  height: 100%;
+body {
+  width: 375px;
+  height: 6968px;
+  position: relative;
+  background-color: #ffffff;
 }
 
-.toolbar {
+/*--HEADER--*/
+
+header.toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #3c3a39;
+  width: 375px;
+  height: 60px;
+  position: static;
+  
+  
 }
 
-.my-logo {
+header.toolbar .my-logo {
   color: #fff;
   font-family: "Roboto", Verdana, sans-serif;
   font-style: normal;
+  font-size: 18px;
+  font-weight: 700;
   display: flex;
+  line-height: 24px;  
   align-items: center;
   text-align: center;
+  width: 140px;
+  height: 24px;
+  padding: 24px;
+  position: static;
+
 }
 
-header .menu-botton {
-  color: #acb7c3;
+header.toolbar .menu-botton {
+  color: #fff;
   background-color: transparent;
-  cursor: pointer;
+  align-content: center;
+  cursor: pointer; 
+  padding: 24px;
 }
 
-.my-name {
+/*--HEADLINE--*/
+.headline{
+  display: flex;
+  width: 375px;
+  height: 590px;
+  align-items: center;
+  flex-direction: column;
+
+    /* BACKGROUND */ 
+  background-size: 228px 225px;
+  background-repeat: no-repeat;
+  background-position: 65vw 100%;
+  background-color: #1c1a19;
+  background-image: url("./images/Illustration.png");
+
+
+
+}
+
+
+
+.headline .my-name {
   flex: none;
   color: #ff6b00;
   font-family: "Crete Round", sans-serif;
@@ -45,6 +84,8 @@ header .menu-botton {
   order: 0;
   flex-grow: 0;
   margin: 12px;
+  padding-top:120px;
+  position: static;
 }
 
 .iam {
@@ -83,19 +124,6 @@ header .menu-botton {
   margin: 12px;
 }
 
-.headline {
-  display: flex;
-  padding: 100px;
-  align-items: center;
-  height: 400px;
-  background-size: 228px 225px;
-  background-repeat: no-repeat;
-  background-position: 65vw 100%;
-  flex-direction: column;
-  background-color: #1c1a19;
-  background-image: url("./images/Illustration.png");
-}
-
 .social-network ul {
   padding-right: 100px;
   display: flex;
@@ -106,11 +134,12 @@ header .menu-botton {
 .social-network ul li {
   list-style: none;
   width: 40px;
-  height: 25px;
+  height: 35px;
   overflow: hidden;
   margin-top: 10px;
   transition: 0.5s;
-  color: #dbd8d7;
+  color: #dbd8d7;  
+  cursor: pointer; 
 }
 
 .work-one {
@@ -148,7 +177,7 @@ header .menu-botton {
   padding: 10px 0 20px;
 }
 
-.tag-recent-work li {
+.tag-recent-work ul li {
   border: 1px solid #8993a4;
   box-sizing: border-box;
   padding: 10px 12px;
@@ -157,63 +186,61 @@ header .menu-botton {
 .button-see-project {
   /* Button / Enable */
 
-  /* Auto layout */
-
+/* Auto layout */
+/*
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
-
   position: static;
   width: 124px;
   height: 48px;
-  left: 0px;
+  left: 0;
   top: 259px;
 
   /* Theme 3 / Primary 1 */
-
+/*
   background: #ff6b00;
 
   /* Inside auto layout */
-
+/*
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin: 12px 0px 100px;
+  margin: 12px 0 100px;
 }
-
+/*
 .button-text {
   position: static;
   width: 100px;
   height: 24px;
   left: 12px;
   top: 12px;
-
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  /* identical to box height, or 141% */
 
+  /* identical to box height, or 141% */
+/*
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
 
   /* Theme 2 / Neutral 11 */
-
-  color: #ffffff;
+/*
+  color: #fff;
 
   /* Inside auto layout */
-
+/*
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .container-works {
-  display: flex;
   flex-direction: column;
   display: grid;
 }
@@ -230,9 +257,6 @@ header .menu-botton {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  background-image: url("./images/Placeholder.png");
-  background-color: #f58931;
-  background-size: 327px 340px;
   background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
@@ -256,8 +280,8 @@ header .menu-botton {
 
   /* Tag */
 
-  /* Auto layout */
-
+/* Auto layout */
+/*
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -272,7 +296,7 @@ header .menu-botton {
   background: rgba(255, 255, 255, 0.24);
 
   /* Inside auto layout */
-
+/*
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -282,8 +306,8 @@ header .menu-botton {
 .see-project-card {
   /* Tag */
 
-  /* Auto layout */
-
+/* Auto layout */
+/*
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -298,7 +322,7 @@ header .menu-botton {
   background-color: #ff6b00;
 
   /* Inside auto layout */
-
+/*
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -307,7 +331,7 @@ header .menu-botton {
 
 .see-project-card p {
   /* See Project */
-
+/*
   position: static;
   width: 100px;
   height: 24px;
@@ -320,18 +344,18 @@ header .menu-botton {
   font-size: 17px;
   line-height: 24px;
   /* identical to box height, or 141% */
-
+/*
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
 
   /* Theme 2 / Neutral 11 */
-
+/*
   color: #ffffff;
 
   /* Inside auto layout */
-
+/*
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -413,3 +437,4 @@ header .menu-botton {
   align-items: center;
   padding: 0 !important;
 }
+*/
