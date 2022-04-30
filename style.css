@@ -135,22 +135,29 @@ header.toolbar .menu-botton {
   cursor: pointer;
 }
 
+/* WORK SECTION */  
+
 .work-one {
   display: flexbox;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 100px 0 0 30px;
+  padding: 120px 24px 0 24px;
 }
 
 .title-work-one {
-  font-size: 40px;
+  width: 327px;
+  height: 83px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
   font-family: "Crete Round", sans-serif;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+  align-items: center;
 }
 
 .image-recent-work {
-  padding-top: 50px;
+  padding-top: 80px;
   width: 327px;
   height: 237px;
 }
@@ -167,11 +174,11 @@ header.toolbar .menu-botton {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  padding: 10px 0 20px;
+  padding: 10px 0 10px;
 }
 
-.tag-recent-work ul li {
-  border: 1px solid #8993a4;
+.tag-recent-work li {
+  border: 1px solid  #8993a4;
   box-sizing: border-box;
   padding: 10px 12px;
 }
@@ -185,11 +192,21 @@ header.toolbar .menu-botton {
   flex-direction: row;
   align-items: center;
   padding: 12px;
+  margin: 0;
   position: static;
-  width: 124px;
+  width: 130px;
   height: 48px;
-  left: 0;
-  top: 259px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  /* identical to box height, or 141% */
+
+  display: flex;
+  text-align: center;
+  letter-spacing: 0.03em;
 
   /* Theme 3 / Primary 1 */
 
@@ -200,43 +217,16 @@ header.toolbar .menu-botton {
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin: 12px 0 100px;
+  margin: 12px 8px 36px;
 }
 
-.button-text {
-  position: static;
-  width: 100px;
-  height: 24px;
-  left: 12px;
-  top: 12px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-
-  /* identical to box height, or 141% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  /* Theme 2 / Neutral 11 */
-
-  color: #fff;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
+/* -- WORKS-- */
 
 .container-works {
   flex-direction: column;
   display: grid;
 }
+
 
 .card-content {
   padding: 200px 0 0 24px;
@@ -267,7 +257,7 @@ header.toolbar .menu-botton {
   justify-content: space-evenly;
 }
 
-.tag ul li {
+.tag  li {
   border: 1px solid #8993a4;
   box-sizing: border-box;
   padding: 10px 12px;
