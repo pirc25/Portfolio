@@ -367,30 +367,65 @@ ul.tag li {
   margin: 0 0 209px;
 }
 
-#about-me .competence {
+/* COMPETENCE */
+
+.competence {
   padding: 100px 0;
   display: grid;
   grid-template-columns: 1fr;
   border-top: solid 1px #fff;
 }
 
-.about-me .competence .competence-list li.list-title::before {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  top: 17px;
-  left: -20px;
-  background: #f55800;
-  transform: rotate(-45deg);
+.competence-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 44px;
   list-style: none;
 }
 
-#about-me .competence ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.list-title {
+  position: absolute;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
   align-items: center;
-  padding: 0 !important;
+  color: #fff;
+  margin: 0 0 44px;
+  justify-content: center;
+}
+
+.competence-item {
+  position: static;
+  width: 114px;
+  height: 48px;
+  text-align: center;
+  font-family: 'Inter', sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin: 10px 0 20px;
+}
+
+.languages::before {
+  content: url(/images/Cuadrado.png);
+  color: #ff6b00;
+}
+
+.frameworks::before {
+  content: url(/images/Rombo.png);
+  color: #ff6b00;
+}
+
+.skills::before {
+  content: url(/images/Circulo.png);
+  color: #ff6b00;
 }
