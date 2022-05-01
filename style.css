@@ -12,6 +12,15 @@ body {
   background-color: #fff;
 }
 
+h3 {
+  font-family: 'Crete Round', sans-serif;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400, regular;
+  line-height: 44px;
+  margin: 12px 16px;
+}
+
 /* --HEADER-- */
 
 header.toolbar {
@@ -135,14 +144,17 @@ header.toolbar .menu-botton {
   cursor: pointer;
 }
 
-/* WORK SECTION */  
+/* WORK SECTION */
+
+.work-section {
+  padding: 120px 24px 0 24px;
+}
 
 .work-one {
   display: flexbox;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 120px 24px 0 24px;
 }
 
 .title-work-one {
@@ -177,7 +189,7 @@ header.toolbar .menu-botton {
   padding: 10px 0 10px;
 }
 
-.tag-recent-work li {
+.tag-recent-work ul li {
   border: 1px solid  #8993a4;
   box-sizing: border-box;
   padding: 10px 12px;
@@ -192,7 +204,6 @@ header.toolbar .menu-botton {
   flex-direction: row;
   align-items: center;
   padding: 12px;
-  margin: 0;
   position: static;
   width: 130px;
   height: 48px;
@@ -202,19 +213,9 @@ header.toolbar .menu-botton {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  /* identical to box height, or 141% */
-
-  display: flex;
   text-align: center;
   letter-spacing: 0.03em;
-
-  /* Theme 3 / Primary 1 */
-
   background: #ff6b00;
-
-  /* Inside auto layout */
-
-  flex: none;
   order: 3;
   flex-grow: 0;
   margin: 12px 8px 36px;
@@ -227,15 +228,14 @@ header.toolbar .menu-botton {
   display: grid;
 }
 
-
 .card-content {
-  padding: 200px 0 0 24px;
-  width: 350px;
-  height: 200px;
+  padding: 0;
+  width: 327px;
+  height: 338px;
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   color: #f8f8f8;
   margin-left: auto;
   margin-right: auto;
@@ -248,95 +248,62 @@ header.toolbar .menu-botton {
     ),
     url("./images/Placeholder.png");
   background-repeat: no-repeat;
+  background-size: 327px 338px;
+}
+
+.work-description {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 16px;
 }
 
 .tag {
+  margin-top: 20px;
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
-.tag  li {
+.tag ul li {
+  text-align: center;
   border: 1px solid #8993a4;
   box-sizing: border-box;
-  padding: 10px 12px;
+  padding: 0 12px;
 
   /* Tag */
 
   display: flex;
-  flex-direction: row;
   align-items: center;
   position: static;
   width: 61px;
   height: 40px;
-  left: 175px;
-  top: 0;
   background: rgba(255, 255, 255, 0.24);
-
-  /* Inside auto layout */
-
   flex: none;
   order: 2;
   flex-grow: 0;
-  margin: 0 12px;
+  margin: 0 16px;
 }
 
 .see-project-card {
-  /* Tag */
-
-  /* Auto layout */
-
-  display: flex;
+  position: static;
   flex-direction: row;
-  align-items: center;
-  padding: 12px 185px;
-  position: static;
-  width: 56px;
-  height: 40px;
-  left: 0;
-  top: 0;
+  padding: 12px;
+  width: 327px;
+  height: 48px;
   background-color: #ff6b00;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 0 50px;
-}
-
-.see-project-card p {
-  /* See Project */
-
-  position: static;
-  width: 100px;
-  height: 24px;
-  left: 12px;
-  top: 12px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-
-  /* identical to box height, or 141% */
-
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-
-  /* Theme 2 / Neutral 11 */
-
   color: #fff;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 0 0;
+  margin: 0 0 24px;
 }
 
 #about-me {
