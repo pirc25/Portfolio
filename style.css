@@ -429,3 +429,34 @@ ul.tag li {
   content: url(/images/Circulo.png);
   color: #ff6b00;
 }
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 844px;
+  background-color: #fff;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-text{
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #172b4d;
+  margin: 120px 24px 100px 24px;
+}
+
+.full-name,
+.email {
+  border:none;
+  margin:20px 0 0 24px;
+  padding: 0 0 14px ;
+}
