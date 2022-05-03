@@ -430,22 +430,23 @@ ul.tag li {
   color: #ff6b00;
 }
 
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   width: 375px;
-  height: 844px;
+  height: 930px;
   background-color: #fff;
 }
 
-.contact-form{
+.contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 0 120px 0;
 }
 
-.contact-text{
+.contact-text {
   font-size: 32px;
   line-height: 44px;
   text-align: center;
@@ -462,9 +463,10 @@ ul.tag li {
   height: 18px;
   flex: none;
   align-self: flex-start;
-  border:none;
-  margin:20px 0 0 40px;
+  border: none;
+  margin: 20px 0 0 40px;
   padding: 0;
+  color: #979493;
 }
 
 hr {
@@ -480,6 +482,7 @@ hr {
   margin: 20px 0 24px 24px;
   padding: 10px;
   border: none;
+  color: #3c3a39;
 }
 
 .submit {
@@ -492,13 +495,6 @@ hr {
   color: #fff;
   background: #ff6b00;
   padding: 10px;
-  text-align: center;
-}
-
-.submit:active {
-  background-color: #e05304;
-  color: #fff;
-  
 }
 
 .submit:hover {
@@ -506,4 +502,34 @@ hr {
   border: 1px solid #f55800;
   box-sizing: border-box;
   color: #f55800;
+  cursor: pointer;
+}
+
+.submit:active {
+  background-color: #e05304;
+  color: #fff;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.social-network-2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 36px 0;
+}
+
+.social-network-2 ul li {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
+  width: 40px;
+  height: 35px;
+  overflow: hidden;
+  margin-top: 10px;
+  transition: 0.5s;
+  color: #505f79;
+  cursor: pointer;
 }
