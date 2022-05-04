@@ -429,3 +429,107 @@ ul.tag li {
   content: url(/images/Circulo.png);
   color: #ff6b00;
 }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 930px;
+  background-color: #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 120px 0;
+}
+
+.contact-text {
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #172b4d;
+  margin: 120px 24px 100px 24px;
+}
+
+.full-name,
+.email {
+  width: 295px;
+  height: 18px;
+  flex: none;
+  align-self: flex-start;
+  border: none;
+  margin: 20px 0 0 40px;
+  padding: 0;
+  color: #979493;
+}
+
+hr {
+  width: 327px;
+  height: 1px;
+  margin: 20px 0 0 24px;
+  background: #dbd8d7;
+}
+
+.message {
+  width: 310px;
+  height: 114px;
+  margin: 20px 0 24px 24px;
+  padding: 10px;
+  border: none;
+  color: #3c3a39;
+}
+
+.submit {
+  height: 44px;
+  margin: 12px 0 0 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  color: #fff;
+  background: #ff6b00;
+  padding: 10px;
+}
+
+.submit:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+  color: #f55800;
+  cursor: pointer;
+}
+
+.submit:active {
+  background-color: #e05304;
+  color: #fff;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.social-network-2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 36px 0;
+}
+
+.social-network-2 ul li {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
+  width: 40px;
+  height: 35px;
+  overflow: hidden;
+  margin-top: 10px;
+  transition: 0.5s;
+  color: #505f79;
+  cursor: pointer;
+}
