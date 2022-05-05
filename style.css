@@ -61,7 +61,7 @@ header.toolbar .my-logo {
 
   background-size: 1003.13px 769.27px;
   background-repeat: no-repeat;
-  background-position: 96.37% -96.23%;
+  background-position: right 0 top 100px;
   background-color: #1c1a19;
   background-image: url("./images/Illustration-header.png");
 }
@@ -114,6 +114,28 @@ header.toolbar .my-logo {
   color: #dbd8d7;
   cursor: pointer;
 }
+
+ .social-network-2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0 36px 0;
+    margin-bottom: 50px;
+    animation-name: slidein;
+    animation-duration: 6s;
+  }
+
+    @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 @media (max-width: 400px) {
   body {
