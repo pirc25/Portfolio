@@ -105,7 +105,7 @@ header.toolbar .my-logo {
   margin: 12px 0 0 143px;
 }
 
-.social-network ul li {
+.social-network-2 ul li {
   list-style: none;
   width: 40px;
   height: 35px;
@@ -115,27 +115,27 @@ header.toolbar .my-logo {
   cursor: pointer;
 }
 
- .social-network-2 ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 25px 0 36px 0;
-    margin-bottom: 50px;
-    animation-name: slidein;
-    animation-duration: 6s;
+.social-network-2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 36px 0;
+  margin-bottom: 50px;
+  animation-name: slidein;
+  animation-duration: 6s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
   }
 
-    @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
+}
 
 @media (max-width: 400px) {
   body {
