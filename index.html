@@ -76,7 +76,7 @@
         text.
       </p>
       <ul class="tag-recent-work">
-        <li> CSS</li>
+        <li id="CSS-1"> CSS</li>
         <li>HTML</li>
         <li>Bootstrap</li>
         <li>Ruby</li>
@@ -86,7 +86,7 @@
       </button>
     </div>
     <div class="container-works ">
-      <div class="card-content">
+      <div class="card-content" id="card-content-1">
         <h3 class="work-title">Profesional Art Printing Data</h3>
         <p class="work-description">
           A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
@@ -97,11 +97,11 @@
           <li>CSS</li>
           <li>Ruby</li>
         </ul>
+        <button type="button" class="see-project-card" id="button-1">
+          See Project
+        </button>
       </div>
-      <button type="button" class="see-project-card">
-        See Project
-      </button>
-      <div class="card-content">
+      <div class="card-content" id="card-content-2">
         <h3 class="work-title">Profesional Art Printing Data</h3>
         <p class="work-description">
           A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
@@ -112,11 +112,12 @@
           <li>CSS</li>
           <li>Ruby</li>
         </ul>
+        <button type="button" class="see-project-card" id="button-2">
+          See Project
+        </button>
       </div>
-      <button type="button" class="see-project-card">
-        See Project
-      </button>
-      <div class="card-content">
+
+      <div class="card-content" id="card-content-3">
         <h3 class="work-title">Profesional Art Printing Data</h3>
         <p class="work-description">
           A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
@@ -127,11 +128,11 @@
           <li>CSS</li>
           <li>Ruby</li>
         </ul>
+        <button type="button" class="see-project-card" id="button-3">
+          See Project
+        </button>
       </div>
-      <button type="button" class="see-project-card">
-        See Project
-      </button>
-      <div class="card-content">
+      <div class="card-content" id="card-content-4">
         <h3 class="work-title">Profesional Art Printing Data</h3>
         <p class="work-description">
           A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
@@ -142,11 +143,11 @@
           <li>CSS</li>
           <li>Ruby</li>
         </ul>
+        <button type="button" class="see-project-card" id="button-4">
+          See Project
+        </button>
       </div>
-      <button type="button" class="see-project-card">
-        See Project
-      </button>
-      <div class="card-content">
+      <div class="card-content" id="card-content-5">
         <h3 class="work-title">Profesional Art Printing Data</h3>
         <p class="work-description">
           A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
@@ -157,15 +158,31 @@
           <li>CSS</li>
           <li>Ruby</li>
         </ul>
+        <button type="button" class="see-project-card" id="button-5">
+          See Project
+        </button>
       </div>
-      <button type="button" class="see-project-card">
-        See Project
-      </button>
+      <div class="card-content" id="card-content-6">
+        <h3 class="work-title">Profesional Art Printing Data</h3>
+        <p class="work-description">
+          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+          standard
+        </p>
+        <ul class="tag">
+          <li>Html</li>
+          <li>CSS</li>
+          <li>Ruby</li>
+        </ul>
+        <button type="button" class="see-project-card" id="button-6">
+          See Project
+        </button>
+      </div>
     </div>
   </section>
+
   <section class="about-me" id="about-me">
     <div class="resume">
-      <h1>About me</h1>
+      <h2>About me</h2>
       <p class="resume-text">
         Hello I’m a software developer! I can help you build a product ,
         feature or website Look through some of my work and experience! If you
@@ -175,39 +192,45 @@
       <button class="get-myresume-btn" type='button'>Get my resume</button>
     </div>
     <div class="competence">
-      <ul class="competence-list">
-        <li class="list-title languages">
-          Languages
-        </li>
-      </ul>
-      <ul class="competence-list">
-        <li class="competence-item">Javascript</li>
-        <li class="competence-item">Ruby</li>
-        <li class="competence-item">Css</li>
-        <li class="competence-item">Html</li>
-      </ul>
-      <ul class="competence-list">
-        <li class="list-title frameworks">
-          Frameworks
-        </li>
-      </ul>
-      <ul class="competence-list">
-        <li class="competence-item">Bootstrap</li>
-        <li class="competence-item">React</li>
-        <li class="competence-item">Gatsby</li>
-        <li class="competence-item">Laravel</li>
-      </ul>
-      <ul class="competence-list">
-        <li class="list-title skills">
-          Skills
-        </li>
-      </ul>
-      <ul class="competence-list">
-        <li class="competence-item">Github</li>
-        <li class="competence-item">Codepen</li>
-        <li class="competence-item">Codesandbox</li>
-        <li class="competence-item">Replit</li>
-      </ul>
+      <div class="languajes-div">
+        <ul class="competence-list">
+          <li class="list-title languages">
+            Languages
+          </li>
+        </ul>
+        <ul class="competence-list">
+          <li class="competence-item">Javascript</li>
+          <li class="competence-item">Ruby</li>
+          <li class="competence-item">Css</li>
+          <li class="competence-item">Html</li>
+        </ul>
+      </div>
+      <div class="frameworks-div">
+        <ul class="competence-list">
+          <li class="list-title frameworks">
+            Frameworks
+          </li>
+        </ul>
+        <ul class="competence-list">
+          <li class="competence-item">Bootstrap</li>
+          <li class="competence-item">React</li>
+          <li class="competence-item">Gatsby</li>
+          <li class="competence-item">Laravel</li>
+        </ul>
+      </div>
+      <div class="skills-div">
+        <ul class="competence-list">
+          <li class="list-title skills">
+            Skills
+          </li>
+        </ul>
+        <ul class="competence-list">
+          <li class="competence-item">Github</li>
+          <li class="competence-item">Codepen</li>
+          <li class="competence-item">Codesandbox</li>
+          <li class="competence-item">Replit</li>
+        </ul>
+      </div>
     </div>
   </section>
   <section class="contact">
@@ -222,27 +245,27 @@
       <textarea class="message" name="message" placeholder="Enter text here" maxlength="500" required></textarea>
       <button class="submit" type="submit">Get in touch</button>
     </form>
-    <hr>
-    <div class="social-network-2">
-      <ul>
-        <li>
-          <i class="fa-brands fa-github"></i>
-        </li>
-        <li>
-          <i class="fab fa-linkedin-in"></i>
-        </li>
-        <li>
-          <i class="fa-brands fa-angellist"></i>
-        </li>
-        <li>
-          <i class="fa-brands fa-twitter"></i>
-        </li>
-        <li>
-          <i class="fa-solid fa-m"></i>
-        </li>
-      </ul>
-    </div>
   </section>
+  <hr>
+  <div class="social-network-2">
+    <ul>
+      <li>
+        <i class="fa-brands fa-github"></i>
+      </li>
+      <li>
+        <i class="fab fa-linkedin-in"></i>
+      </li>
+      <li>
+        <i class="fa-brands fa-angellist"></i>
+      </li>
+      <li>
+        <i class="fa-brands fa-twitter"></i>
+      </li>
+      <li>
+        <i class="fa-solid fa-m"></i>
+      </li>
+    </ul>
+  </div>
 </body>
 
 </html>
