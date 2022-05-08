@@ -257,11 +257,12 @@ ul.tag-recent-work li {
 }
 
 .tag {
-  margin-top: 20px;
+  margin: 5%;
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
 ul.tag li {
@@ -324,7 +325,7 @@ ul.tag li {
   flex-direction: column;
 }
 
-.resume h1 {
+.resume h2 {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -336,7 +337,7 @@ ul.tag li {
   margin: 0 0 24px;
 }
 
-.about-me .resume .resume-text {
+.resume-text {
   width: 50%;
   height: auto;
   font-family: "Inter", sans-serif;
@@ -348,7 +349,7 @@ ul.tag li {
   margin: 24px 0;
 }
 
-.about-me .resume .get-myresume-btn {
+.get-myresume-btn {
   width: 161px;
   height: 48px;
   font-family: "Inter", sans-serif;
@@ -393,7 +394,7 @@ ul.tag li {
   line-height: 44px;
   align-items: center;
   color: #fff;
-  margin: 0 0 44px;
+  margin: 0 0 20px;
   justify-content: center;
 }
 
@@ -553,15 +554,15 @@ hr {
   header.toolbar .my-logo {
     color: #fff;
     display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 5px;
-    padding: 0 0 0 5%;
+    margin-left: 9.5%;
+    padding: 0;
   }
 
   .index {
     display: flex;
     list-style: none;
+    margin-right: 10%;
+
   }
 
   #fa-envelope {
@@ -577,10 +578,13 @@ hr {
     display: none !important;
   }
 
+
+    /* --HEADLINE-- */
+
   .headline {
     display: grid;
-    grid-template-columns: 10% 40%;
-    gap: 5%;
+    grid-template-columns: 1.3% 40%;
+    gap: 6.18%;
     width: 100%;
     height: 854px;
     background-size: 50%;
@@ -590,7 +594,6 @@ hr {
     background-image: url("./images/Illustration-header.png");
   }
 
-  /* --HEADLINE-- */
 
   .information {
     width: 100%;
@@ -646,6 +649,17 @@ hr {
     padding: 0;
   }
 
+    .social-network ul {
+    grid-area: 1/1/1/1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+    /* -- WORK SECTION -- */
+
+
   .button-see-project {
     grid-area: 5/3/6/4;
     font-family: 'Inter', sans-serif;
@@ -656,13 +670,6 @@ hr {
     margin: 50px 0;
   }
 
-  .social-network ul {
-    grid-area: 1/1/1/1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
   .tag-recent-work li {
     margin: 0 10px 5px 0;
@@ -676,8 +683,6 @@ hr {
     color: #dbd8d7;
     cursor: pointer;
   }
-
-  /* -- WORK SECTION -- */
 
   .work-section {
     display: grid;
@@ -713,7 +718,8 @@ hr {
   }
 
   .image-recent-work {
-    grid-area: 2/1/6/3;
+        grid-area: 2/1/6/3;
+
     padding: 0;
     margin: 0 0 0 0;
     width: 90%;
@@ -721,7 +727,8 @@ hr {
   }
 
   .multi-post {
-    grid-area: 2/3/3/4;
+        grid-area: 2/3/3/4;
+
     font-family: 'Create Round', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -733,7 +740,8 @@ hr {
   }
 
   .text-work-one {
-    grid-area: 3/3/4/4;
+        grid-area: 3/3/4/4;
+
     margin: 15px 0 0 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
@@ -771,9 +779,14 @@ hr {
   }
 
   .see-project-card {
+    display: none;
     margin: 0;
     padding: 0;
     width: 100%;
+  }
+
+  .card-content:hover .see-project-card {
+   display: block;
   }
 
   /* -- ABOUT ME -- */
@@ -782,7 +795,9 @@ hr {
     width: 100%;
     background-image: url("./images/Frame-desktop.png");
     background-position: top 180px right 0;
+    background-size:50% ;
     height: auto;
+    padding-top: 120px;
   }
 
   .resume {
@@ -792,7 +807,7 @@ hr {
     height: auto;
   }
 
-  .resume h1 {
+  .resume h2 {
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -801,6 +816,7 @@ hr {
     color: #f55800;
     width: auto;
     height: auto;
+    margin-left: 9.86%;
   }
 
   .resume-text {
@@ -809,8 +825,13 @@ hr {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    width: 100%;
+    width: 40%;
     height: auto;
+    margin-left: 9.86%;
+  }
+
+  .get-myresume-btn{
+    margin-left: 9.86%;
   }
 
   .competence {
@@ -822,17 +843,24 @@ hr {
   .competence-list {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     width: 100%;
     list-style: none;
   }
 
+  .competence-item {
+    justify-content: flex-start ;
+  }
+
+/* -- CONTACT -- */
+
   .contact {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     height: auto;
     background-color: #fff;
-    margin: 130px 0 0 0;
+    margin: 100px 0 0 0;
   }
 
   .contact-text {
@@ -843,12 +871,37 @@ hr {
     font-style: normal;
     font-weight: 700;
     color: #172b4d;
-    margin: 0 0 0 5%;
+    width: 31.58%;
+    margin: 0 2% 0 9.73%;
+  }
+
+  .full-name .email{
+    margin: 0 0 0 2%;
+    font-size: 15px;
+  }
+
+
+
+  .message{
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    height: 90px;
+  }
+
+  .contact-form {
+    width: 52%;
+    margin: 0px 9.73% 0 0;
+    align-items: flex-start;
+  }
+
+  .contact-form hr {
+    width: 100%;
   }
 
   .submit {
     height: 44px;
-    margin: 12px 0 0 12px;
+    margin: 0 3% 130px ;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 17px;
