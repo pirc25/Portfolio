@@ -772,7 +772,7 @@ hr {
 
   .see-project-card {
     display: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
     width: 100%;
   }
