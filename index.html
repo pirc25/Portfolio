@@ -18,7 +18,7 @@
     <div class="my-logo">
       Richard Burneo
     </div>
-    <div class="index">
+    <div class="index" id="index">
       <p class="index-elemet" id="portfolio">
         Portfolio
       </p>
@@ -32,10 +32,22 @@
         <i class="fa fa-envelope" aria-hidden="true"></i>
       </p>
     </div>
-    <nav class="menu-botton">
+    <nav class="menu-botton" onclick="openMenu()">
       <i class="fa-solid fa-bars"></i>
     </nav>
+    <div id="my-menu" class="overlay" style="height: 0%; ">
+      <a href="javascript:void(0)" class="btn-close" onclick="closeMenu()">&times;</a>
+      <div class="overlay-content">
+        <a href="#index" onclick="closeMenu()">Portfolio</a>
+        <hr>
+        <a href="#about-me" onclick="closeMenu()">About</a>
+        <hr>
+        <a href="#contact-form" onclick="closeMenu()">Contact</a>
+        <hr>
+      </div>
+    </div>
   </header>
+
   <section class="headline">
     <div class="information">
       <h1 class="my-name">Hey there. <br>I'm Richard</h1>
@@ -71,7 +83,8 @@
       <hr>
       <img class="image-recent-work" src="./images/Placeholder@2x.png" alt="This is a meaningful image description">
       <h2 class="multi-post">Multi-post stories</h2>
-      <p class="text-work-one">A daily selection of privately personalized reads; no accounts or sign-ups required. has
+      <p class="text-work-one">A daily selection of privately personalized reads; no accounts or sign-ups required.
+        has
         been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy
         text.
       </p>
@@ -89,7 +102,8 @@
       <div class="card-content" id="card-content-1">
         <h3 class="work-title">Profesional Art Printing Data</h3>
         <p class="work-description">
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+          industry's
           standard
         </p>
         <ul class="tag">
@@ -104,7 +118,8 @@
       <div class="card-content" id="card-content-2">
         <h3 class="work-title">Profesional Art Printing Data</h3>
         <p class="work-description">
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+          industry's
           standard
         </p>
         <ul class="tag">
@@ -120,7 +135,8 @@
       <div class="card-content" id="card-content-3">
         <h3 class="work-title">Profesional Art Printing Data</h3>
         <p class="work-description">
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+          industry's
           standard
         </p>
         <ul class="tag">
@@ -135,7 +151,8 @@
       <div class="card-content" id="card-content-4">
         <h3 class="work-title">Profesional Art Printing Data</h3>
         <p class="work-description">
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+          industry's
           standard
         </p>
         <ul class="tag">
@@ -150,7 +167,8 @@
       <div class="card-content" id="card-content-5">
         <h3 class="work-title">Profesional Art Printing Data</h3>
         <p class="work-description">
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+          industry's
           standard
         </p>
         <ul class="tag">
@@ -165,7 +183,8 @@
       <div class="card-content" id="card-content-6">
         <h3 class="work-title">Profesional Art Printing Data</h3>
         <p class="work-description">
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+          industry's
           standard
         </p>
         <ul class="tag">
@@ -233,8 +252,10 @@
       </div>
     </div>
   </section>
-  <section class="contact">
-    <h6 class="contact-text"> I'm always interested in hearing about new projects, so if you'd like to chat please get
+
+  <section class="contact" id="contact-form">
+    <h6 class="contact-text"> I'm always interested in hearing about new projects, so if you'd like to chat please
+      get
       in
       touch. </h6>
     <form class="contact-form" action="https://formspree.io/f/mdobpjkp" method="POST">
@@ -266,6 +287,14 @@
       </li>
     </ul>
   </div>
+  <script>
+    function openMenu() {
+      document.getElementById("my-menu").style.height = "100%";
+    }
+    function closeMenu() {
+      document.getElementById("my-menu").style.height = "0%";
+    }
+  </script>
 </body>
 
 </html>
