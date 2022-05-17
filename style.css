@@ -20,6 +20,13 @@ h3 {
   margin: 12px 16px;
 }
 
+hr {
+  width: 90%;
+  height: 1px;
+  margin: 20px 0 0 24px;
+  background: #dbd8d7;
+}
+
 /* --HEADER-- */
 
 header.toolbar {
@@ -63,44 +70,43 @@ header.toolbar .menu-botton {
   height: 0%;
   width: 100%;
   position: fixed;
-  z-index: 0 ;
+  z-index: 0;
   top: 0;
   left: 0;
-  background-color:#3C3A39;
+  background-color: #3c3a39;
   overflow-y: hidden;
   transition: 0.5s;
 }
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 10%;
   width: 100%;
   text-align: flex-start;
   margin-top: 30px;
-  
 }
 
 .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 32px;
-  color: #FFF5E1;
+  color: #fff5e1;
   display: block;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 32px;
   line-height: 44px;
   transition: 0.3s;
   margin-left: 10.66%;
 }
 
-.overlay hr{
-  border: solid 1px #6F6C6B;
-  background-color: #6F6C6B;
+.overlay hr {
+  border: solid 1px #6f6c6b;
+  background-color: #6f6c6b;
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: #6F6C6B;
+.overlay a:hover,
+.overlay a:focus {
+  color: #6f6c6b;
 }
 
 .overlay .btn-close {
@@ -108,7 +114,7 @@ header.toolbar .menu-botton {
   top: 30px;
   right: 30px;
   font-size: 30px;
-  color: #67798E;
+  color: #67798e;
 }
 
 /* --HEADLINE-- */
@@ -518,13 +524,6 @@ ul.tag li {
   color: #979493;
 }
 
-hr {
-  width: 90%;
-  height: 1px;
-  margin: 20px 0 0 24px;
-  background: #dbd8d7;
-}
-
 .message {
   width: 310px;
   height: 114px;
@@ -627,7 +626,7 @@ hr {
     display: none !important;
   }
 
-  .overlay{
+  .overlay {
     display: none;
   }
 
