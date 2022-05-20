@@ -36,7 +36,7 @@
       <i class="fa-solid fa-bars"></i>
     </nav>
     <div id="my-menu" class="overlay">
-      <a href=" javascript:void(0)" class="btn-close" onclick="closeMenu()">&times;</a>
+      <a href="javascript:void(0)" class="btn-close" onclick="closeMenu()">&times;</a>
       <div class="overlay-content">
         <a href="#index" onclick="closeMenu()">Portfolio</a>
         <hr>
@@ -94,7 +94,7 @@
         <li>Bootstrap</li>
         <li>Ruby</li>
       </ul>
-      <button type="button" class="button-see-project">
+      <button type="button" class="button-see-project" onclick="openDetail(0)">
         See project
       </button>
     </div>
@@ -111,7 +111,7 @@
           <li>CSS</li>
           <li>Ruby</li>
         </ul>
-        <button type="button" class="see-project-card" id="button-1">
+        <button type="button" class="see-project-card" id="button-1" onclick="openDetail(1)">
           See Project
         </button>
       </div>
@@ -127,7 +127,7 @@
           <li>CSS</li>
           <li>Ruby</li>
         </ul>
-        <button type="button" class="see-project-card" id="button-2">
+        <button type="button" class="see-project-card" id="button-2" onclick="openDetail(2)">
           See Project
         </button>
       </div>
@@ -144,7 +144,7 @@
           <li>CSS</li>
           <li>Ruby</li>
         </ul>
-        <button type="button" class="see-project-card" id="button-3">
+        <button type="button" class="see-project-card" id="button-3" onclick="openDetail(3)">
           See Project
         </button>
       </div>
@@ -160,7 +160,7 @@
           <li>CSS</li>
           <li>Ruby</li>
         </ul>
-        <button type="button" class="see-project-card" id="button-4">
+        <button type="button" class="see-project-card" id="button-4" onclick="openDetail(4)">
           See Project
         </button>
       </div>
@@ -176,7 +176,7 @@
           <li>CSS</li>
           <li>Ruby</li>
         </ul>
-        <button type="button" class="see-project-card" id="button-5">
+        <button type="button" class="see-project-card" id="button-5" onclick="openDetail(5)">
           See Project
         </button>
       </div>
@@ -192,12 +192,37 @@
           <li>CSS</li>
           <li>Ruby</li>
         </ul>
-        <button type="button" class="see-project-card" id="button-6">
+        <button type="button" class="see-project-card" id="button-6" onclick="openDetail(6)">
           See Project
         </button>
       </div>
     </div>
   </section>
+
+  <div class="detail detail-hide" id="detail">
+    <div class="detail-content" id="detailContent">
+      <h3 class="detail-title" id="detailTitle">Profesional Art Printing Data</h3>
+      <a href="javascript:void(0)" class="btn-close" onclick="closeDetail()">&times;</a>
+      <ul class="detail-lenguajes" id="detailLanguajes">
+        <li>Html</li>
+        <li>CSS</li>
+        <li>Ruby</li>
+      </ul>
+      <img src="./images/MultiSotry.png" class="detail-image" id="detailImage" alt="Web pag image">
+      <div class="dereca">
+        <p class="detail-description" id="detailDescription">
+          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+          industry's standard
+        </p>
+        <div class="detail-buttons" id="detail-buttons">
+          <a href="#" id="btnDetailLive" target="_blank" class="btn-detail button-see-project">See Live<i
+              class="fas fa-link"></i></a>
+          <a href="#" id="btnDetailSource" class="btn-detail button-see-project" target="_blank">
+            See Source <i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section class="about-me" id="about-me">
     <div class="resume">
@@ -252,6 +277,10 @@
       </div>
     </div>
   </section>
+
+
+
+
 
   <section class="contact" id="contact-form">
     <h6 class="contact-text"> I'm always interested in hearing about new projects, so if you'd like to chat please
