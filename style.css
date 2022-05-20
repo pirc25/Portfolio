@@ -384,8 +384,8 @@ ul.tag li {
 
 .detail-image {
   height: 100%;
-  width: 90.68%;
-  margin: 0 4.66%;
+  width: 70%;
+  margin: 0 15%;
 }
 
 .detail-title {
@@ -399,19 +399,26 @@ ul.tag li {
   color: #172b4d;
 }
 
+.title-model {
+  display: flex;
+}
+
 .detail-content {
   background-color: #fff;
   margin: 5%;
+  max-height: 700px;
 }
 
 .detail .btn-close {
-  position: absolute;
-  top: 10%;
-  right: 10%;
+  position: relative;
+  float: right;
+  top: 0%;
+  right: 0%;
   font-size: 40px;
   color: #67798e;
   font-weight: 600;
   text-decoration: none;
+  margin: 10px 10px 0 0;
 }
 
 .dereca {
@@ -439,20 +446,27 @@ ul.tag li {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 15px;
   color: #344563;
   margin: 25px 4.66%;
 }
 
 .detail-buttons {
-  margin: 0;
-  margin: 25px 4.66%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 5px;
+  margin: 25px 4.66% 25px 4.66%;
 }
 
 .btn-detail {
   margin: 0;
   display: inline;
   text-decoration: none;
+  text-align: center;
+  padding: 0;
+  line-height: 50px;
+  font-size: 15px;
 }
 
 #DetailSource {
@@ -949,6 +963,11 @@ ul.tag li {
     grid-area: 3/1/4/2;
   }
 
+  .title-model {
+    display: flex;
+    grid-area: 1/1/2/3;
+  }
+
   .detail-content {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -981,9 +1000,11 @@ ul.tag li {
   }
 
   .detail .btn-close {
-    position: absolute;
+    position: relative;
     float: right;
-    margin: 5%;
+    margin: 0 25px 0 0;
+    top: 0;
+    right: 0;
   }
 
   /* -- ABOUT ME -- */

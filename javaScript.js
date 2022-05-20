@@ -19,7 +19,7 @@ const projects = [
       'bootstrap',
       'Ruby',
     ],
-    image: './images/Img MultiSotry.png',
+    image: './images/MultiSotry.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     live: 'https://reflexionesrichardburneo.blogspot.com/',
     source: 'https://github.com/pirc25',
