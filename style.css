@@ -993,14 +993,14 @@ ul.tag li {
   }
 
   .detail-description {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  color: #344563;
-}
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
 
   .detail-buttons {
     margin: 0 0;
@@ -1012,7 +1012,7 @@ ul.tag li {
 
   .btn-detail {
     display: flex;
-    text-align:center;
+    text-align: center;
     margin: 20px 0 30px;
     justify-content: center;
   }
