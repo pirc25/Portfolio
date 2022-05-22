@@ -677,6 +677,26 @@ ul.tag li {
   box-sizing: border-box;
 }
 
+.alert {
+  background-color: rgba(255, 0, 0, 0.075);
+  border: 1px solid red;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px 5px rgba(255, 0, 0, 0.1);
+  color: red;
+  display: none;
+  margin: 20px 0;
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.alert .alertIcon {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
 .social-network-2 ul {
   display: flex;
   align-items: center;

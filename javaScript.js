@@ -123,6 +123,33 @@ function closeMenu() {
   document.getElementById('my-menu').style.height = '0%';
 }
 
+/* -- Email Validation -- */
+const form = document.getElementById('contactForm');
+const email = document.getElementById('email');
+const alert = document.getElementById('alertWin');
+const alertText = document.getElementById('alert-text');
+email.addEventListener = ('keyup', () => { alert.style.display = 'none'; });
+
+form.addEventListener(
+  'submit', (event) => {
+    event.preventDefault();
+    const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    const emailVal = email.value.trim();
+
+    if (!emailRegex.test(emailVal)) {
+      email.focus();
+      alert.style.display = 'block';
+    } else if (email.value !== email.value.toLowerCase) {
+      alertText.innerText = 'Please, write your email in lower case';
+      email.focus();
+      alert.style.display = 'block';
+    } else {
+      form.submit();
+    }
+  },
+);
+
 openMenu();
 closeMenu();
 openDetail();
