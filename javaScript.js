@@ -88,6 +88,34 @@ const projects = [
   },
 ];
 
+const form = document.getElementById('contactForm');
+const email = document.getElementById('email');
+const alert = document.getElementById('alertWin');
+const alertText = document.getElementById('alert-text');
+email.addEventListener = ('keyup', () => { alert.style.display = 'none'; });
+
+const getInfo = () => {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+
+  if (formData) {
+    document.getElementById('full-name').value = formData.fullname;
+    document.getElementById('email').value = formData.email;
+    document.getElementById('message').value = formData.message;
+  }
+};
+
+form.addEventListener('keyup', () => {
+  const formData = {
+    fullname: document.getElementById('full-name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
+
+  localStorage.setItem('formData', JSON.stringify(formData));
+}, true);
+
+getInfo();
+
 const detail = document.getElementById('detail');
 const detailTitle = document.getElementById('detailTitle');
 const detailDescription = document.getElementById('detailDescription');
@@ -124,11 +152,6 @@ function closeMenu() {
 }
 
 /* -- Email Validation -- */
-const form = document.getElementById('contactForm');
-const email = document.getElementById('email');
-const alert = document.getElementById('alertWin');
-const alertText = document.getElementById('alert-text');
-email.addEventListener = ('keyup', () => { alert.style.display = 'none'; });
 
 form.addEventListener(
   'submit', (event) => {
