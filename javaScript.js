@@ -140,7 +140,7 @@ form.addEventListener(
     if (!emailRegex.test(emailVal)) {
       email.focus();
       alert.style.display = 'block';
-    } else if (email.value !== email.value.toLowerCase) {
+    } else if (email.value !== email.value.toLowerCase()) {
       alertText.innerText = 'Please, write your email in lower case';
       email.focus();
       alert.style.display = 'block';
